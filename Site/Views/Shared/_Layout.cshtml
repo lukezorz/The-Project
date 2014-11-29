@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/font-awesome/font-awesome-4.2.0/css/font-awesome.min.css")
+    @Styles.Render("~/Content/themes/base/menu.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            @*<div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>*@
+            <nav id="menuWrapper">
+                <ul id="menu">
+                    <li class="active button btnHome transition-able">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="active button btnStore transition-able">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="active button btnAbout transition-able">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-cogs"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="active button btnContact transition-able">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--@RenderSection("featured", required: false)-->
+    <section class="content-wrapper main-content clear-fix">
+        @RenderBody()
+    </section>
+    <!--
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - L-Corp</p>
+            </div>
+        </div>
+    </footer>-->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/script")
+    @Scripts.Render("~/bundles/youtube")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
