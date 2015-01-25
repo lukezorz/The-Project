@@ -97,8 +97,10 @@ h5, h6 {
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
+    position: relative;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 .main-content {
@@ -141,35 +143,106 @@ footer {
 /* login
 ----------------------------------------------------------*/
 #login {
-    display: block;
-    font-size: .85em;
-    margin: 0 0 10px;
-    text-align: right;
+    position: absolute;
+    top: -205px;
+    right: -150px;
+    width: 200px;
+    height: 250px;
+    padding: 0 0 5px 5px;
+    border-bottom-left-radius: 17%;
+    text-align: center;
+    transition: box-shadow 1s 1s ease-out, background 1s 1s ease-out, padding 0.25s ease-in-out, top 0.5s cubic-bezier(0.5, 1.1, 0.5, 1.1), right 0.5s cubic-bezier(0.5, 1.1, 0.5, 1.1);
 }
 
-    #login a {
-        background-color: #d3dce0;
-        margin-left: 10px;
-        margin-right: 3px;
-        padding: 2px 3px;
-        text-decoration: none;
+    #login.on {
+        box-shadow: 1px 1px 1px #666;
+        background: rgba(255, 255, 255, 0.25);
     }
 
-        #login a.username {
-            background: none;
-            margin: 0;
-            padding: 0;
-            text-decoration: underline;
+        #login.on:hover {
+            padding: 5px;
         }
 
-    #login ul {
-        margin: 0;
+    #login.active {
+        top: -10px;
+        right: -10px;
+        padding: 10px 15px 5px 5px!important;
     }
 
-    #login li {
-        display: inline;
-        list-style: none;
+    #login .fa {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 30px;
+        line-height: 50px;
+        width: 50px;
+        color: rgba(226, 226, 226, 0.6);
+        transition: all 1s 1s ease-out;
+        opacity: 0;
+        cursor: pointer;
     }
+
+        #login .fa.on {
+            opacity: 1;
+            text-shadow: 1px 4px 6px #FFF, 0 0 0 #000, 1px 4px 6px #FFF;
+        }
+
+#loginWrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 35px);
+}
+
+    #loginWrapper #loginForm {
+        transition: all 0.75s 1s ease-in-out;
+        margin-top: 35px;
+        height: 0;
+    }
+
+        #loginWrapper #loginForm.active {
+            height: 68px;
+        }
+
+    #loginWrapper div input[type="text"] {
+        height: 20px;
+        width: 160px;
+        margin: 5px 0;
+        padding: 1px 5px;
+        transition: opacity 1s 1.5s ease-in;
+        opacity: 0;
+    }
+
+        #loginWrapper div input[type="text"].active {
+            opacity: 1;
+        }
+
+    #loginWrapper input[type="submit"] {
+        opacity: 0;
+        background: none;
+        border: 0;
+        padding: 10px;
+        color: #A9A9A9;
+        text-shadow: 0px 0px 3px white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+        #loginWrapper input[type="submit"].active {
+            opacity: 1;
+        }
+
+        #loginWrapper input[type="submit"]:hover {
+            padding: 6px 1px;
+            font-size: 20px;
+        }
+
+#btnLogin {
+    transition: all 0.25s 0.25s ease-in-out;
+}
+
+#btnRegister {
+    transition: all 0.5s 2s ease-in-out;
+}
 
 
 /* page elements
@@ -295,7 +368,7 @@ aside {
     font-weight: 700;
 }
 
-/* login page */
+/* login page
 #loginForm {
     border-right: solid 2px #c8c8c8;
     float: left;
@@ -346,7 +419,7 @@ aside {
 #logoutForm {
     display: inline;
 }
-
+     */
 /* contact */
 .contact h3 {
     font-size: 1.2em;
@@ -702,7 +775,7 @@ tr.pager td {
     font-size: 50px;
     line-height: 95vh;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 1s 1s ease-in-out;
 }
 
 

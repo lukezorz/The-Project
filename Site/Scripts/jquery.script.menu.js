@@ -86,7 +86,7 @@ function setMenu() {
     });
     $(".button").delay(1000).each(function () {
         $(this).css({
-            "top": -30
+            "top": -20
         });
     });
     $("#menuWrapper").css({
@@ -94,10 +94,13 @@ function setMenu() {
         "margin-left": "auto",
         "margin-right": "auto",
         "margin-bottom": 0 + "%",
-        "height": 15 + "%",
-        "width": 15 + "%",
+        "height":  93,
+        "width": 160,
         "border-radius": "0 0 50% 50%"
     });
+
+    $("#login").toggleClass('on');
+    $("#login .fa").toggleClass('on');
 }
 
 function loadMenu() {

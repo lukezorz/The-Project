@@ -12,3 +12,17 @@ C:\Users\luke\Documents\Visual Studio 2013\Projects\The Project\Business\bin\Deb
 C:\Users\luke\Documents\Visual Studio 2013\Projects\The Project\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
 C:\Users\luke\Documents\Visual Studio 2013\Projects\The Project\Business\obj\Debug\Business.dll
 C:\Users\luke\Documents\Visual Studio 2013\Projects\The Project\Business\obj\Debug\Business.pdb
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Business.dll.config
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Business.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Business.pdb
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Common.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Data.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\EntityFramework.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Common.pdb
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\Data.pdb
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\EntityFramework.xml
+C:\Users\Luke\Documents\GitHub\The-Project\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luke\Documents\GitHub\The-Project\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Luke\Documents\GitHub\The-Project\Business\obj\Debug\Business.dll
+C:\Users\Luke\Documents\GitHub\The-Project\Business\obj\Debug\Business.pdb
